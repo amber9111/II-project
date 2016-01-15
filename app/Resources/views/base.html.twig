@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css' />
+        <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet" />
+        <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Almendra&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Amarante&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link href="{{asset('bundles/expenses/css/style.css')}}" rel="stylesheet" type='text/css' />
+        
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <script>
+            var options = {};
+            $('a.popup').popup(options);
+        </script> 
+
+
+
+
+
+
+
+
+        {%block stylesheets %} {%endblock%}
+
+    </head>
+
+    <body>
+
+
+
+        <div class="menu">
+
+            <!-- Menu icon -->
+            <div class="icon-close">
+                <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
+            </div>   
+
+            <ul>
+                <li><a href="{{ path('_homepage') }}">Strona Główna</a></li>
+
+                <li><a href="{{ path('_resta') }}">Restauracja</a></li>
+
+                <li><a href="{{ path('_oferta') }}">Pokoje</a></li>
+
+                <li><a href="{{ path('_dojazd') }}">Dojazd</a></li>
+
+                <li><a href="{{ path('_regul') }}">Regulamin</a></li>
+
+                <li><a href="{{ path('_rezerwacja') }}">Rezerwacja</a></li>
+
+
+
+
+
+
+
+                <ul>
+                    </div>          
+
+                    <div class="jumbotron">
+
+                        <div class="icon-menu" id="TOP">
+                            <i class="fa fa-bars"></i>
+                            Menu
+                        </div>
+
+
+
+                        <div class="logo">
+
+
+
+                            <h1>Pensjonat "Skalny Dworek"</h1></br></br></br></br>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</br> Sed ac dapibus 
+                                ipsum, eu mollis velit. Pellentesque finibus augue id eleifend volutpat. 
+                                Nunc sollicitudin fermentum orci, vel interdum erat efficitur sed. Vestibulum mi 
+                                eros, congue nec vestibulum sed, rutrum at enim. Aenean interdum et diam quis 
+                                volutpat. Mauris urna nibh, hendrerit a magna nec, iaculis porta leo. 
+                                Mauris risus purus, feugiat eu nulla eu, sodales efficitur nibh. </br></br></br>
+                            </p>
+
+
+                        </div>   
+
+                    </div>
+
+
+
+
+
+
+                {% block body %}{% endblock %}
+
+
+
+
+                <div class="neighborhood-guides">
+                    <div class="container">
+
+                        <div id="facebook_slider_widget" style="display: none"><script type="text/javascript" src="http://webfrik.pl/widget/facebook_slider.html?fb_url=https://www.facebook.com/DavidGuetta&amp;fb_width=290&amp;fb_height=590&amp;fb_faces=true&amp;fb_stream=true&amp;fb_header=true&amp;fb_border=true&amp;fb_theme=light&amp;chx=787&amp;speed=FAST&amp;fb_pic=sign&amp;position=RIGHT"></script></div>
+                        <h2>Nasz pensjonat</h2>  </br>
+                        <p>Nasz pensjonat jest najlepszy.</p>
+
+
+
+
+
+                        <div class="col-md-4">
+
+                            <div class="thumbnail">
+
+                                <img src="{{asset('bundles/expenses/images/4.jpg')}}">
+
+
+                            </div>
+
+
+                            <div class="thumbnail">
+
+                                <img src="{{asset('bundles/expenses/images/4.jpg')}}">
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="thumbnail">
+
+                                <img src="{{asset('bundles/expenses/images/4.jpg')}}">
+
+
+                            </div>
+
+
+                            <div class="thumbnail">
+
+                                <img src="{{asset('bundles/expenses/images/4.jpg')}}">
+
+
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="thumbnail">
+
+
+                                <a href="{{asset('bundles/expenses/images/4.jpg')}}" class="popup"><img src="{{asset('bundles/expenses/images/4.jpg')}}"></a>
+                                
+
+                            </div>
+
+                            <div class="thumbnail">
+
+
+                                <a href="{{asset('bundles/expenses/images/4.jpg')}}" class="popup"><img src="{{asset('bundles/expenses/images/4.jpg')}}"></a>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="learn-more">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h3>RESTAURACJA</h3>
+                                    <p>Mamy restauracje.</p>
+                                    <p><a href="{{ path('_resta') }}">Sprawdź MENU</a></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3>POKOJE</h3>
+                                    <p>W swojej ofecie mamy kilkadziesiąt pokoji.</p>
+                                    <p><a href="{{ path('_oferta') }}">Sprawdź POKOJE</a></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3>Kontakt</h3>
+                                    <p>Przykładowy adres toplowdwa  1/2.
+                                        Przykładowy adres toplowdwa  1/2.
+                                        Przykładowy adres toplowdwa  1/2.
+                                    </p>
+                                    <p><a href="{{ path('_dojazd') }}">Sprawdź jak dojechać</a></p>
+                                </div>  
+
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="alt2">
+                        <div class="container">
+                            <footer>
+                                &copy; Marek Wnęk <br />
+                                <a href="#TOP">Wróć na górę</a>
+                            </footer>
+                        </div>
+                    </div>
+
+
+                    <div style="clear:both"></div>
+
+
+                    <script src="{{asset('bundles/expenses/js/jquery-1.11.3.min.js') }}"></script>
+                    <script src="{{asset('bundles/expenses/js/app.js') }}"></script>
+                    <script src="{{asset('bundles/expenses/js/parsley/parsley.min.js')}}"></script>
+                    <script src="{{asset('bundles/expenses/js/parsley/parsley-standalone.min.js')}}"></script>
+                    <script src="{{asset('bundles/expenses/js/jquery.popup.js')}}"></script>
+                    <script src="{{asset('bundles/expenses/js/parsley/parsley.extend.min.js')}}"></script>
+                    <script src="{{asset('bundles/expenses/js/bootstrap.js')}}"></script>
+                    <script src="{{asset('bundles/expenses/js/jquery.popup.min.js')}}"></script>
+                    <script src="{{asset('bundles/expenses/js/jquery.js')}}"></script>
+                    <script src="{{asset('bundles/expenses/js/basiccalendar.js')}}"></script>
+                    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+                    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+
+
+
+
+                    {% block javascripts %}
+
+
+
+
+                    {% endblock %}
+
+                    </body>
+                    </html>

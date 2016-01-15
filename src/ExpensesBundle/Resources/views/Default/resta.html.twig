@@ -1,0 +1,139 @@
+{% extends '::base.html.twig' %}
+{% block javascripts %}
+<script>
+    
+ var main = function() {
+  $('.article').click(function() {
+    $('.article').removeClass('current');
+    $('.description').hide();
+
+    $(this).addClass('current');
+    $(this).children('.description').show();
+  });
+}
+
+$(document).ready(main);   
+    
+    
+</script>
+{% endblock %}
+
+{% block body %}
+
+ 
+ <div class="content">
+ 
+     <div class="container">
+         
+          <div class="logo1">
+                        
+                        <img src="{{asset('bundles/expenses/images/logo.png')}}">
+                        
+                        </div>
+         
+       <div class="col-md-2">
+          <div class="thumbnail">
+
+
+
+                    <a href="{{asset('bundles/expenses/images/image.jpg') }}" class="popup"><img src="{{asset('bundles/expenses/images/image.jpg') }}"></a>                    
+
+          </div>
+      </div>
+      <p>Po dniu pełnym wrażeń, gości naszego pensjonatu jak i wszystkich przejeżdżających przez Łapsze zapraszamy do naszej restauracji. W komfortowym, klimatyzowanym wnętrzu mogą zasmakować Państwo dań kuchni regionalnej oraz europejskiej. 
+Oferujemy również dobrze wyposażony drink-bar. Po dniu pełnym wrażeń, gości naszego pensjonatu jak i wszystkich przejeżdżających przez Łapsze zapraszamy do naszej restauracji. W komfortowym, klimatyzowanym wnętrzu mogą zasmakować Państwo dań kuchni regionalnej oraz europejskiej. 
+Oferujemy również dobrze wyposażony drink-bar. Po dniu pełnym wrażeń, gości naszego pensjonatu jak i wszystkich przejeżdżających przez Łapsze zapraszamy do naszej restauracji. W komfortowym, klimatyzowanym wnętrzu mogą zasmakować Państwo dań kuchni regionalnej oraz europejskiej. 
+Oferujemy również dobrze wyposażony drink-bar.  </p>
+
+
+
+      <div class="article current">
+        <div class="item row">
+         
+          <div class="col-xs-6">
+              <p class="title">Dania główne</p>
+          </div>
+        
+        </div>
+        <div class="description row">
+          
+          <div class="col-xs-10">
+           
+              <p>Jajko sadzone na szpinaku 	8 zł </br>
+                  Tosty z serem mozarella i pomidorami	10 zł  </br>
+                  Ser Camembert panierowany z żurawiną	10 zł   </br>
+                  Bigos (200 g)	8 zł </p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="article">
+        <div class="item row">
+         
+          <div class="col-xs-6">
+            <p class="title">Zupy</p>
+          </div>
+         
+        </div>
+        <div class="description row">
+         
+          <div class="col-xs-10">
+            
+            <p>Gówno 	8 zł </br>
+                  Tosty z serem mozarella i pomidorami	10 zł  </br>
+                  Ser Camembert panierowany z żurawiną	10 zł   </br>
+                  Bigos (200 g)	8 zł</p>
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="article">
+        <div class="item row">
+            
+          <div class="col-xs-6">
+            <p class="title">Przystawki</p>
+          </div>
+        
+         
+        </div>
+        <div class="description row">
+          
+          <div class="col-xs-10">
+            
+            <p>Jajko sadzone na szpinaku 	8 zł </br>
+                  Tosty z serem mozarella i pomidorami	10 zł  </br>
+                  Ser Camembert panierowany z żurawiną	10 zł   </br>
+                  Bigos (200 g)	8 zł</p>
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="article">
+        <div class="item row">
+          <div class="col-xs-6">
+            <p class="title">Desery</p>
+          </div>
+          
+          
+        </div>
+        <div class="description row">
+          
+          <div class="col-xs-10">
+            
+            <p>Jajko sadzone na szpinaku 	8 zł </br>
+                  Tosty z serem mozarella i pomidorami	10 zł  </br>
+                  Ser Camembert panierowany z żurawiną	10 zł   </br>
+                  Bigos (200 g)	8 zł</p>
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+        </div>
+      </div>
+         </div>
+
+ </div>
+    
+    
+{% endblock %}

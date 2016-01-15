@@ -1,0 +1,30 @@
+{% extends '::base.html.twig' %}
+
+
+
+{%block body %}
+
+<div class="container">
+    <form id="form" class="well" method="POST" action="{{path('_rezerwacja')}}" data-validate="parsley">
+         <h2>Formularz rezerwacji</h2>
+         <label>E-mail</label>
+        <input type="text" name="email" class="input-xlarge" data-trigger="change" data-required="true" data-type="email">
+        <label>Imię</label>
+        <input type="text" name="firstname" class="input-xlarge" data-trigger="change" data-required="true">
+        <label>Nazwisko</label>
+        <input type="text" name="username" class="input-xlarge" data-trigger="change" data-required="true">
+        <label>Adres</label>
+        <input type="text" name="adress" class="input-xlarge" data-trigger="change" data-required="true">
+         <label>Telefon</label>
+        <input type="text" name="telefon" class="input-xlarge" data-trigger="change" data-required="true">
+         <label>Pokój</label>
+        <input type="text" name="pokoj" class="input-xlarge" data-trigger="change" data-required="true">        
+        <div>
+            <button class="btn btn-primary" type="submit" >Wyślij zapytanie</button>
+        </div>
+
+    </form>
+</div>
+ {%endblock %}
+ 
+ 

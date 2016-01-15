@@ -1,0 +1,24 @@
+
+_homepage:
+    path:     /
+    defaults: { _controller: ExpensesBundle:Default:index }
+    
+_oferta:    
+    path:     /pokoje
+    defaults: { _controller: ExpensesBundle:Default:pokoje }
+
+_resta:    
+    path:     /resta
+    defaults: { _controller: ExpensesBundle:Default:resta }
+    
+_dojazd:    
+    path:     /dojazd
+    defaults: { _controller: ExpensesBundle:Default:dojazd }
+
+_rezerwacja:
+    path:     /rezer
+    defaults: { _controller: ExpensesBundle:Default:signup }
+    
+_regul:
+    path:     /regulamin
+    defaults: { _controller: ExpensesBundle:Default:regul }
