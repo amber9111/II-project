@@ -30,6 +30,7 @@ class __TwigTemplate_0cac3cb45fee33766d5910a1446581062552f7ac4810c8bce7704df33e7
     {
         // line 4
         echo "
+   
     <script>
         var options = {};
         \$('a.popup').popup(options);
@@ -44,10 +45,10 @@ class __TwigTemplate_0cac3cb45fee33766d5910a1446581062552f7ac4810c8bce7704df33e7
 ";
     }
 
-    // line 18
+    // line 19
     public function block_body($context, array $blocks = array())
     {
-        // line 19
+        // line 20
         echo "
 
 
@@ -60,7 +61,7 @@ class __TwigTemplate_0cac3cb45fee33766d5910a1446581062552f7ac4810c8bce7704df33e7
 
 
              <img src=\"";
-        // line 30
+        // line 31
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/images/image.jpg"), "html", null, true);
         echo "\">                    
 
@@ -95,7 +96,7 @@ class __TwigTemplate_0cac3cb45fee33766d5910a1446581062552f7ac4810c8bce7704df33e7
 
 
 
-                    <a href=\"http://placehold.it/350x175.png\" class=\"popup\"> <img src=\"http://goo.gl/0Kd7UO\"></a>                    
+                    <a href=\"http://placehold.it/350x175.png\" class=\"popup\"><img src=\"http://goo.gl/0Kd7UO\"></a>                    
 
                 </div>
 
@@ -304,13 +305,14 @@ class __TwigTemplate_0cac3cb45fee33766d5910a1446581062552f7ac4810c8bce7704df33e7
 
     public function getDebugInfo()
     {
-        return array (  64 => 30,  51 => 19,  48 => 18,  32 => 4,  29 => 3,  11 => 1,);
+        return array (  65 => 31,  52 => 20,  49 => 19,  32 => 4,  29 => 3,  11 => 1,);
     }
 }
 /* {% extends '::base.html.twig' %}*/
 /* */
 /* {% block javascripts %}*/
 /* */
+/*    */
 /*     <script>*/
 /*         var options = {};*/
 /*         $('a.popup').popup(options);*/
@@ -369,7 +371,7 @@ class __TwigTemplate_0cac3cb45fee33766d5910a1446581062552f7ac4810c8bce7704df33e7
 /* */
 /* */
 /* */
-/*                     <a href="http://placehold.it/350x175.png" class="popup"> <img src="http://goo.gl/0Kd7UO"></a>                    */
+/*                     <a href="http://placehold.it/350x175.png" class="popup"><img src="http://goo.gl/0Kd7UO"></a>                    */
 /* */
 /*                 </div>*/
 /* */

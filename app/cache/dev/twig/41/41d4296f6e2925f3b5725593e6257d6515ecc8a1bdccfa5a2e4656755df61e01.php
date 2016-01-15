@@ -20,14 +20,15 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<!DOCTYPE html>
+        echo "
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset=\"UTF-8\" />
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
 
         <title>";
-        // line 7
+        // line 8
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
 
@@ -39,30 +40,18 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
         <link href='http://fonts.googleapis.com/css?family=Amarante&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
         <link rel=\"stylesheet\" href=\"//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css\">
         <link href=\"";
-        // line 16
+        // line 17
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/css/style.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type='text/css' />
-        
+
 
         <meta name=\"description\" content=\"\">
         <meta name=\"author\" content=\"\">
 
-        <script>
-            var options = {};
-            \$('a.popup').popup(options);
-        </script> 
-
-
-
-
-
-
-
-
         ";
-        // line 34
+        // line 23
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 35
+        // line 25
         echo "
     </head>
 
@@ -79,32 +68,32 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
 
             <ul>
                 <li><a href=\"";
-        // line 50
+        // line 40
         echo $this->env->getExtension('routing')->getPath("_homepage");
         echo "\">Strona Główna</a></li>
 
                 <li><a href=\"";
-        // line 52
+        // line 42
         echo $this->env->getExtension('routing')->getPath("_resta");
         echo "\">Restauracja</a></li>
 
                 <li><a href=\"";
-        // line 54
+        // line 44
         echo $this->env->getExtension('routing')->getPath("_oferta");
         echo "\">Pokoje</a></li>
 
                 <li><a href=\"";
-        // line 56
+        // line 46
         echo $this->env->getExtension('routing')->getPath("_dojazd");
         echo "\">Dojazd</a></li>
 
                 <li><a href=\"";
-        // line 58
+        // line 48
         echo $this->env->getExtension('routing')->getPath("_regul");
         echo "\">Regulamin</a></li>
 
                 <li><a href=\"";
-        // line 60
+        // line 50
         echo $this->env->getExtension('routing')->getPath("_rezerwacja");
         echo "\">Rezerwacja</a></li>
 
@@ -151,9 +140,9 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
 
 
                 ";
-        // line 104
+        // line 94
         $this->displayBlock('body', $context, $blocks);
-        // line 105
+        // line 95
         echo "
 
 
@@ -174,7 +163,7 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
                             <div class=\"thumbnail\">
 
                                 <img src=\"";
-        // line 124
+        // line 114
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/images/4.jpg"), "html", null, true);
         echo "\">
 
@@ -185,7 +174,7 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
                             <div class=\"thumbnail\">
 
                                 <img src=\"";
-        // line 132
+        // line 122
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/images/4.jpg"), "html", null, true);
         echo "\">
 
@@ -200,7 +189,7 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
                             <div class=\"thumbnail\">
 
                                 <img src=\"";
-        // line 144
+        // line 134
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/images/4.jpg"), "html", null, true);
         echo "\">
 
@@ -211,7 +200,7 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
                             <div class=\"thumbnail\">
 
                                 <img src=\"";
-        // line 152
+        // line 142
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/images/4.jpg"), "html", null, true);
         echo "\">
 
@@ -229,12 +218,12 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
 
 
                                 <a href=\"";
-        // line 167
+        // line 157
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/images/4.jpg"), "html", null, true);
         echo "\" class=\"popup\"><img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/images/4.jpg"), "html", null, true);
         echo "\"></a>
-                                
+
 
                             </div>
 
@@ -242,7 +231,7 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
 
 
                                 <a href=\"";
-        // line 175
+        // line 165
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/images/4.jpg"), "html", null, true);
         echo "\" class=\"popup\"><img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/images/4.jpg"), "html", null, true);
@@ -262,7 +251,7 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
                                     <h3>RESTAURACJA</h3>
                                     <p>Mamy restauracje.</p>
                                     <p><a href=\"";
-        // line 190
+        // line 180
         echo $this->env->getExtension('routing')->getPath("_resta");
         echo "\">Sprawdź MENU</a></p>
                                 </div>
@@ -270,7 +259,7 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
                                     <h3>POKOJE</h3>
                                     <p>W swojej ofecie mamy kilkadziesiąt pokoji.</p>
                                     <p><a href=\"";
-        // line 195
+        // line 185
         echo $this->env->getExtension('routing')->getPath("_oferta");
         echo "\">Sprawdź POKOJE</a></p>
                                 </div>
@@ -281,7 +270,7 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
                                         Przykładowy adres toplowdwa  1/2.
                                     </p>
                                     <p><a href=\"";
-        // line 203
+        // line 193
         echo $this->env->getExtension('routing')->getPath("_dojazd");
         echo "\">Sprawdź jak dojechać</a></p>
                                 </div>  
@@ -317,90 +306,93 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
                     <div style=\"clear:both\"></div>
 
 
-                    <script src=\"";
-        // line 237
+                     <script src=\"";
+        // line 227
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/js/jquery-1.11.3.min.js"), "html", null, true);
         echo "\"></script>
-                    <script src=\"";
-        // line 238
+                <script src=\"";
+        // line 228
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/js/app.js"), "html", null, true);
         echo "\"></script>
-                    <script src=\"";
-        // line 239
+                <script src=\"";
+        // line 229
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/js/parsley/parsley.min.js"), "html", null, true);
         echo "\"></script>
-                    <script src=\"";
-        // line 240
+                <script src=\"";
+        // line 230
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/js/parsley/parsley-standalone.min.js"), "html", null, true);
         echo "\"></script>
-                    <script src=\"";
-        // line 241
+                <script src=\"";
+        // line 231
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/js/jquery.popup.js"), "html", null, true);
         echo "\"></script>
-                    <script src=\"";
-        // line 242
+                <script src=\"";
+        // line 232
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/js/parsley/parsley.extend.min.js"), "html", null, true);
         echo "\"></script>
-                    <script src=\"";
-        // line 243
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/js/bootstrap.js"), "html", null, true);
-        echo "\"></script>
-                    <script src=\"";
-        // line 244
+                <script src=\"";
+        // line 233
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/js/jquery.popup.min.js"), "html", null, true);
-        echo "\"></script>
-                    <script src=\"";
-        // line 245
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/js/jquery.js"), "html", null, true);
-        echo "\"></script>
-                    <script src=\"";
-        // line 246
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/expenses/js/basiccalendar.js"), "html", null, true);
         echo "\"></script>
                     <script src=\"//code.jquery.com/jquery-1.10.2.js\"></script>
                     <script src=\"//code.jquery.com/ui/1.11.4/jquery-ui.js\"></script>
+                    <script>
+                      \$(function () {
+                        \$('a[href*=#]:not([href=#])').click(function () {
+                            if (location.pathname.replace(/^\\//, '') == this.pathname.replace(/^\\//, '') && location.hostname == this.hostname) {
+                                var target = \$(this.hash);
+                                target = target.length ? target : \$('[name=' + this.hash.slice(1) + ']');
+                                if (target.length) {
+                                    \$('html,body').animate({
+                                        scrollTop: target.offset().top
+                                    }, 1000);
+                                    return false;
+                                }
+                            }
+                        });
+                    });
+
+                </script>
 
 
 
 
 
 
-                    ";
-        // line 255
+";
+        // line 259
         $this->displayBlock('javascripts', $context, $blocks);
         // line 261
         echo "
+
+          
+
                     </body>
                     </html>
 ";
     }
 
-    // line 7
+    // line 8
     public function block_title($context, array $blocks = array())
     {
         echo "Welcome!";
     }
 
-    // line 34
+    // line 23
     public function block_stylesheets($context, array $blocks = array())
     {
-        echo " ";
+        // line 24
+        echo "        ";
     }
 
-    // line 104
+    // line 94
     public function block_body($context, array $blocks = array())
     {
     }
 
-    // line 255
+    // line 259
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 256
-        echo "
-
-
-
-                    ";
     }
 
     public function getTemplateName()
@@ -415,9 +407,10 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
 
     public function getDebugInfo()
     {
-        return array (  399 => 256,  396 => 255,  391 => 104,  385 => 34,  379 => 7,  372 => 261,  370 => 255,  358 => 246,  354 => 245,  350 => 244,  346 => 243,  342 => 242,  338 => 241,  334 => 240,  330 => 239,  326 => 238,  322 => 237,  285 => 203,  274 => 195,  266 => 190,  246 => 175,  233 => 167,  215 => 152,  204 => 144,  189 => 132,  178 => 124,  157 => 105,  155 => 104,  108 => 60,  103 => 58,  98 => 56,  93 => 54,  88 => 52,  83 => 50,  66 => 35,  64 => 34,  43 => 16,  31 => 7,  23 => 1,);
+        return array (  394 => 259,  389 => 94,  385 => 24,  382 => 23,  376 => 8,  366 => 261,  364 => 259,  335 => 233,  331 => 232,  327 => 231,  323 => 230,  319 => 229,  315 => 228,  311 => 227,  274 => 193,  263 => 185,  255 => 180,  235 => 165,  222 => 157,  204 => 142,  193 => 134,  178 => 122,  167 => 114,  146 => 95,  144 => 94,  97 => 50,  92 => 48,  87 => 46,  82 => 44,  77 => 42,  72 => 40,  55 => 25,  53 => 23,  44 => 17,  32 => 8,  23 => 1,);
     }
 }
+/* */
 /* <!DOCTYPE html>*/
 /* <html>*/
 /*     <head>*/
@@ -434,24 +427,13 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
 /*         <link href='http://fonts.googleapis.com/css?family=Amarante&subset=latin,latin-ext' rel='stylesheet' type='text/css' />*/
 /*         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">*/
 /*         <link href="{{asset('bundles/expenses/css/style.css')}}" rel="stylesheet" type='text/css' />*/
-/*         */
+/* */
 /* */
 /*         <meta name="description" content="">*/
 /*         <meta name="author" content="">*/
 /* */
-/*         <script>*/
-/*             var options = {};*/
-/*             $('a.popup').popup(options);*/
-/*         </script> */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/* */
-/*         {%block stylesheets %} {%endblock%}*/
+/*         {%block stylesheets %}*/
+/*         {%endblock%}*/
 /* */
 /*     </head>*/
 /* */
@@ -585,7 +567,7 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
 /* */
 /* */
 /*                                 <a href="{{asset('bundles/expenses/images/4.jpg')}}" class="popup"><img src="{{asset('bundles/expenses/images/4.jpg')}}"></a>*/
-/*                                 */
+/* */
 /* */
 /*                             </div>*/
 /* */
@@ -654,30 +636,43 @@ class __TwigTemplate_e8f038a0b15f69e7cf68bf0d130e0732073d395f2cb93b4423d47862dde
 /*                     <div style="clear:both"></div>*/
 /* */
 /* */
-/*                     <script src="{{asset('bundles/expenses/js/jquery-1.11.3.min.js') }}"></script>*/
-/*                     <script src="{{asset('bundles/expenses/js/app.js') }}"></script>*/
-/*                     <script src="{{asset('bundles/expenses/js/parsley/parsley.min.js')}}"></script>*/
-/*                     <script src="{{asset('bundles/expenses/js/parsley/parsley-standalone.min.js')}}"></script>*/
-/*                     <script src="{{asset('bundles/expenses/js/jquery.popup.js')}}"></script>*/
-/*                     <script src="{{asset('bundles/expenses/js/parsley/parsley.extend.min.js')}}"></script>*/
-/*                     <script src="{{asset('bundles/expenses/js/bootstrap.js')}}"></script>*/
-/*                     <script src="{{asset('bundles/expenses/js/jquery.popup.min.js')}}"></script>*/
-/*                     <script src="{{asset('bundles/expenses/js/jquery.js')}}"></script>*/
-/*                     <script src="{{asset('bundles/expenses/js/basiccalendar.js')}}"></script>*/
+/*                      <script src="{{asset('bundles/expenses/js/jquery-1.11.3.min.js') }}"></script>*/
+/*                 <script src="{{asset('bundles/expenses/js/app.js') }}"></script>*/
+/*                 <script src="{{asset('bundles/expenses/js/parsley/parsley.min.js')}}"></script>*/
+/*                 <script src="{{asset('bundles/expenses/js/parsley/parsley-standalone.min.js')}}"></script>*/
+/*                 <script src="{{asset('bundles/expenses/js/jquery.popup.js')}}"></script>*/
+/*                 <script src="{{asset('bundles/expenses/js/parsley/parsley.extend.min.js')}}"></script>*/
+/*                 <script src="{{asset('bundles/expenses/js/jquery.popup.min.js')}}"></script>*/
 /*                     <script src="//code.jquery.com/jquery-1.10.2.js"></script>*/
 /*                     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>*/
+/*                     <script>*/
+/*                       $(function () {*/
+/*                         $('a[href*=#]:not([href=#])').click(function () {*/
+/*                             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {*/
+/*                                 var target = $(this.hash);*/
+/*                                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');*/
+/*                                 if (target.length) {*/
+/*                                     $('html,body').animate({*/
+/*                                         scrollTop: target.offset().top*/
+/*                                     }, 1000);*/
+/*                                     return false;*/
+/*                                 }*/
+/*                             }*/
+/*                         });*/
+/*                     });*/
+/* */
+/*                 </script>*/
 /* */
 /* */
 /* */
 /* */
 /* */
 /* */
-/*                     {% block javascripts %}*/
+/* {% block javascripts %}*/
+/* {% endblock %}*/
 /* */
 /* */
-/* */
-/* */
-/*                     {% endblock %}*/
+/*           */
 /* */
 /*                     </body>*/
 /*                     </html>*/

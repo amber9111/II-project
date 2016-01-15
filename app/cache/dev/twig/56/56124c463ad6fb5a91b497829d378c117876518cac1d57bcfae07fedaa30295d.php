@@ -8,7 +8,7 @@ class __TwigTemplate_730b67c7d9afc34c9562adc608555fd8dbb2ee3ccdfd82c21d8117ce6d8
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("index.html.twig", "ExpensesBundle:Default:dojazd.html.twig", 1);
+        $this->parent = $this->loadTemplate("::base.html.twig", "ExpensesBundle:Default:dojazd.html.twig", 1);
         $this->blocks = array(
             'javascripts' => array($this, 'block_javascripts'),
             'body' => array($this, 'block_body'),
@@ -17,7 +17,7 @@ class __TwigTemplate_730b67c7d9afc34c9562adc608555fd8dbb2ee3ccdfd82c21d8117ce6d8
 
     protected function doGetParent(array $context)
     {
-        return "index.html.twig";
+        return "::base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -90,7 +90,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         return array (  58 => 29,  55 => 28,  32 => 5,  29 => 4,  11 => 1,);
     }
 }
-/* {% extends 'index.html.twig' %}*/
+/* {% extends '::base.html.twig' %}*/
 /* */
 /* */
 /* {% block javascripts %}*/

@@ -15,24 +15,13 @@
         <link href='http://fonts.googleapis.com/css?family=Amarante&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
         <link href="{{asset('bundles/expenses/css/style.css')}}" rel="stylesheet" type='text/css' />
-        
+
 
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <script>
-            
-            $('a.popup').popup(options);
-        </script> 
-
-
-
-
-
-
-
-
-        {%block stylesheets %} {%endblock%}
+        {%block stylesheets %}
+        {%endblock%}
 
     </head>
 
@@ -166,7 +155,7 @@
 
 
                                 <a href="{{asset('bundles/expenses/images/4.jpg')}}" class="popup"><img src="{{asset('bundles/expenses/images/4.jpg')}}"></a>
-                                
+
 
                             </div>
 
@@ -235,30 +224,43 @@
                     <div style="clear:both"></div>
 
 
-                    <script src="{{asset('bundles/expenses/js/jquery-1.11.3.min.js') }}"></script>
-                    <script src="{{asset('bundles/expenses/js/app.js') }}"></script>
-                    <script src="{{asset('bundles/expenses/js/parsley/parsley.min.js')}}"></script>
-                    <script src="{{asset('bundles/expenses/js/parsley/parsley-standalone.min.js')}}"></script>
-                    <script src="{{asset('bundles/expenses/js/jquery.popup.js')}}"></script>
-                    <script src="{{asset('bundles/expenses/js/parsley/parsley.extend.min.js')}}"></script>
-                    <script src="{{asset('bundles/expenses/js/bootstrap.js')}}"></script>
-                    <script src="{{asset('bundles/expenses/js/jquery.popup.min.js')}}"></script>
-                    <script src="{{asset('bundles/expenses/js/jquery.js')}}"></script>
-                    <script src="{{asset('bundles/expenses/js/basiccalendar.js')}}"></script>
+                     <script src="{{asset('bundles/expenses/js/jquery-1.11.3.min.js') }}"></script>
+                <script src="{{asset('bundles/expenses/js/app.js') }}"></script>
+                <script src="{{asset('bundles/expenses/js/parsley/parsley.min.js')}}"></script>
+                <script src="{{asset('bundles/expenses/js/parsley/parsley-standalone.min.js')}}"></script>
+                <script src="{{asset('bundles/expenses/js/jquery.popup.js')}}"></script>
+                <script src="{{asset('bundles/expenses/js/parsley/parsley.extend.min.js')}}"></script>
+                <script src="{{asset('bundles/expenses/js/jquery.popup.min.js')}}"></script>
                     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
                     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+                    <script>
+                      $(function () {
+                        $('a[href*=#]:not([href=#])').click(function () {
+                            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                                var target = $(this.hash);
+                                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                                if (target.length) {
+                                    $('html,body').animate({
+                                        scrollTop: target.offset().top
+                                    }, 1000);
+                                    return false;
+                                }
+                            }
+                        });
+                    });
+
+                </script>
 
 
 
 
 
 
-                    {% block javascripts %}
+{% block javascripts %}
+{% endblock %}
 
 
-
-
-                    {% endblock %}
+          
 
                     </body>
                     </html>
